@@ -1,0 +1,16 @@
+version: '3'
+services:
+  order-service:
+    build: ./target/docker
+    container_name: "orderService"
+    ports:
+      - 8080:8080
+    links:
+      - dockermongo
+    depends_on:
+      - dockermongo
+  dockermongo:
+    image: mongo
+    container_name: "dockermongo"
+    ports:
+      - 27017:27017

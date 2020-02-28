@@ -9,7 +9,7 @@ Profile local uses embedded mongoDB.
 
 To build and start service in docker execute bash script: 
 ```
-./docker-run/sh
+./docker-run.sh
 ```
 
 Swagger REST API documentation can be found in
